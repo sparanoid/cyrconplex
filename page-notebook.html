@@ -1,0 +1,12 @@
+---
+layout: post
+title: Notebook
+permalink: /notebook/index.html
+excerpt: News about this site and the author
+---
+
+<ul class=pl>
+{% for post in site.categories.notebook %}
+	{% include post-list-link.html %}
+{% endfor %}
+</ul>

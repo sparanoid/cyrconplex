@@ -1,0 +1,40 @@
+# folder settings
+source: .
+destination: ./_site
+
+# site settings
+permalink: /:categories/:title
+markdown: rdiscount
+
+# site url
+url: sparanoid.com
+
+# used by images inserted in posts
+file: http://a1.sparanoid.com
+
+# used by specified background images
+assets-cdn: http://a2.sparanoid.com
+
+# used by css url in default.html
+assets-path: /assets
+
+# custom vars
+name: Sparanoid
+full-name: Tunghiao Liu
+email: info@sparanoid.com
+twitter: sparanoid
+twitter-alt: tunghsiao
+slogan: The net is vast and limitless
+googe-custom-search: 012621050422714259885:yjom5u8_gk4
+
+# fire up a localhost and auto generate when files change
+auto: true
+server: ture
+server_port: 4321
+
+# exclude files for generated site
+exclude: 
+- README.md
+- LICENSE
+- Rakefile
+- cyrconplex.tmproj
