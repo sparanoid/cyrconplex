@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+                                    _    __	 	
+  ___ ___  ___ ________ ____  ___  (_)__/ /
+ (_-</ _ \/ _ `/ __/ _ `/ _ \/ _ \/ / _  /
+/___/ .__/\_,_/_/  \_,_/_//_/\___/_/\_,_/
+   /_/
+
+-->
+
+{% include fake-cache.html %}
+
+<meta name=viewport content=width=device-width>
+
+<link rel=alternate href=/feed/ type=application/atom+xml>
+<link rel=stylesheet href={{ site.assets-path }}/css/a.min.css>
+
+{% if page.bgi %}<style>:root {background-image: url({{ site.assets-cdn }}{{ site.assets-path }}{{ page.bgi }});}</style>{% endif %}
+{% if page.bgc %}<style>:root {background-color: {{ page.bgc }};}</style>{% endif %}
+
+<title>{% if page.title != 'Sparanoid' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
+
+<header>
+	<ul>
+		<li{% if page.title == 'Sparanoid' %} class=current{% endif %}><a href=/ rel=home accesskey=x>Home</a></li>
+		<li{% if page.title == 'Project' or page.category == 'project' %} class=current{% endif %}><a href=/project/>Project</a></li>
+		<li{% if page.title == 'Artwork' or page.category == 'artwork' %} class=current{% endif %}><a href=/artwork/>Artwork</a></li>
+		<li{% if page.title == 'Notebook' or page.category == 'notebook' %} class=current{% endif %}><a href=/notebook/>Notebook</a></li>
+		<li{% if page.title == 'About' or page.category == 'about' %} class=current{% endif %}><a href=/about/>About</a></li>
+	</ul>
+</header>
+
+{{ content }}
+
+<footer>
+	{% if page.category == "artwork" or page.category == "project" or page.category == "notebook" %} 
+	<div id=nv>
+		{% if page.next.url %}
+			<p><span>Next</span> <a href={{ page.next.url }}/>{{ page.next.title }}</a></p>
+		{% else %}
+			<p><span>Next</span> N/A</p>
+	       {% endif %}
+		{% if page.previous.url %}
+			<p><span>Prev</span> <a href={{ page.previous.url }}/>{{ page.previous.title }}</a></p>
+		{% else %}
+			<p><span>Prev</span> N/A</p>
+	       {% endif %}
+	</div>
+	{% endif %}
+
+	<div id=cs>
+		<p><span>Search</span> <a href="http://www.google.com/search?hl=en&amp;q=site%3Asparanoid.com">site:sparanoid.com</a></p>
+	</div>
+
+	<div id=sp>
+		{% include sponsor-debug.html %}
+	</div>
+
+	<div id=mt>
+		<p><a href=http://twitter.com/{{ site.twitter }}>{{ site.name }}</a> feat. <a href=http://twitter.com/{{ site.twitter-alt }}>{{ site.full-name }}</a>. (<a href=/feed/ title="Feed - Atom (The Atom Syndication Format)">Atom</a>)</p>
+	</div>
+</footer>

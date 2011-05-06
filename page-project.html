@@ -1,0 +1,12 @@
+---
+layout: post
+title: Project
+permalink: /project/index.html
+excerpt: A collection of design works and projects
+---
+
+<ul class=pl>
+{% for post in site.categories.project %}
+	{% include post-list-link.html %}
+{% endfor %}
+</ul>
