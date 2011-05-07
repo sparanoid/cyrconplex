@@ -7,6 +7,6 @@ excerpt: A collection of hand-drawn / computer-drawn works
 
 <ul class=al>
 {% for post in site.categories.artwork %}
-	<li><a href={{ post.url }}/><img src="{{ site.file }}/thumb/{{ post.thumb }}" alt="{{ post.title }}"></a></li>
+	{% include post-img-list.html %}
 {% endfor %}
 </ul>

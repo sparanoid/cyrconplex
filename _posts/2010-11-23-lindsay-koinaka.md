@@ -3,6 +3,7 @@ layout: post
 title: lindsay-koinaka 3.0
 category: project
 excerpt: A WordPress theme, now it's on Stacey and Jekyll
+thumb: lindsay-koinaka.jpg
 ---
 
 <p class=note>Now lindsay-koinaka has three versions: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://staceyapp.com/">Stacey</a> and WordPress, check out the download boxes below</p>

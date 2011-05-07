@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 7-Zip Chinese Simplified Language File Revision #1
-category: project
-excerpt: 7-Zip 簡體中文語言文件修訂工程
+category: notebook
+excerpt: 7-Zip 簡體中文語言文件修訂
 ---
 
 <p class=note>今後的語言文件修訂工作將在 <a href="http://code.google.com/p/7-zip/">Google Code</a> 上進行</p>
