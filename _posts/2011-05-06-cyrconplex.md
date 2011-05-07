@@ -3,7 +3,7 @@ layout: post
 title: cyrconlex
 category: project
 excerpt: The 16th version of sparanoid.com
-bgc: '#fff6ed'
+bg: '#fff6ed'
 ---
 
 <p><img src="{{ site.file }}/cyrconplex-preview.jpg"></p>

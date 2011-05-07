@@ -3,7 +3,7 @@ layout: post
 title: foobar2000 Skin - MonoLite Plus
 category: project
 excerpt: A foobar2000 theme based on Columns UI
-bgc: '#fff9ed'
+bg: '#fff9ed'
 ---
 
 <p class=note>Lastest Version: <strong>0.4.3</strong> for foobar2000 1.0 / <strong>0.2</strong> for foobar2000 0.9.6.9</p>

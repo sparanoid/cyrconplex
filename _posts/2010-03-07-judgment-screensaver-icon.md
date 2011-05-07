@@ -3,7 +3,7 @@ layout: post
 title: Antiskill, Judgment Screensaver / Icon
 category: project
 excerpt: Based on Toaru Kagaku no Railgun「とある科学の超電磁砲」
-bgc: '#eafbf1'
+bg: '#eafbf1'
 ---
 
 <h3>學園都市風紀委員 177 支部＆警備員 スクリーンセーバー＆アイコン from「とある科學の超電磁砲」</h3>

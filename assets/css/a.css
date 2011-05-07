@@ -6,38 +6,6 @@
 
 */
 
-/* Reference Block
-
-	By default:
-	
-	1em = 16px
-	
-	so:
-
-	48px = 3em
-	36px = 2.25em
-	32px = 2em
-	30px = 1.875em
-	28px = 1.75em
-	26px = 1.625em
-	24px = 1.5em
-	22px = 1.375em
-	20px = 1.25em
-	18px = 1.125em
-	16px = 1em
-	15px = 0.9375em
-	14px = 0.875em
-	13px = 0.8125em
-	12px = 0.75em // problem with Titillium auto-hinting
-	11px = 0.6875em
-	10px = 0.625em
-	 9px = 0.5625em
-	 8px = 0.5em
-	 7px = 0.4375em
-	 6px = 0.375em
-
-*/
-
 * {
 	margin: 0;
 	padding: 0;
@@ -45,17 +13,8 @@
 
 :root {
 	color: #000;
-/*	min-width: 480px;*/
 	font-size: 14px;
-	font-family: 'Courier New', 'Hiragino Mincho Pro', serif;
-/*	used by different posts */
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-h1, h2, h3, h4, h5, h6 {
-/*	font-weight: normal;*/
+	font-family: 'Courier New', 'Hiragino Mincho Pro', monospace;
 }
 
 a {
@@ -69,7 +28,6 @@ a {
 header ul {
 	font-size: 12px;
 	padding: 6px 20px;
-	text-transform: uppercase;
 	background: rgba(0, 0, 0, .9);
 	display: inline-block;
 }
@@ -82,8 +40,8 @@ header ul {
 /*		opacity: .999;*/
 	}
 		header a[rel=home] {
-			height: 25px;
 			width: 25px;
+			height: 25px;
 			display: inline-block;
 			background: url(http://a2.sparanoid.com/assets/img/l.svg) no-repeat 0 0;
 			text-indent: -999em;
@@ -132,41 +90,36 @@ article {
 				}
 
 footer {
-	font-size: 12px;
 	padding: 30px 20px;
 }
-	#nv,
-	#cs {
-		font-size: 14px;
-		padding-bottom: 30px;
+	footer br {
+		line-height: 30px;
 	}
-		#nv span,
-		#cs span {
-			font-size: 10px;
-			color: #fff;
-			background: #000;
-			padding: 0 6px;
-			text-transform: uppercase;
-		}
-	#sp {
+	footer p span {
+		font-size: 12px;
+		color: #fff;
+		background: #000;
+		padding: 0 6px;
+	}
+	.yoggrttext {
 		width: 160px;
-		padding-bottom: 30px;
+		display: block;
 	}
-		.yoggrtad img {
-			margin-bottom: 10px;
-			border-radius: 3px;
+	.yoggrtad img {
+		border-radius: 3px;
+	}
+	.adby {
+		margin-top: 1em;
+		font-size: 9px;
+		font-family: Arial, sans-serif;
+		text-transform: uppercase;
+	}
+		.adby em {
+			font-family: Georgia, serif;
+			text-transform: lowercase;
 		}
-		.adby {
-			margin-top: 1em;
-			font-size: 9px;
-			font-family: Arial, sans-serif;
-			text-transform: uppercase;
-		}
-			.adby em {
-				text-transform: lowercase;
-				font-family: Georgia, serif;
-			}
-	#mt {
+	.c {
+		font-size: 12px;
 	}
 
 article h3 {
@@ -176,19 +129,15 @@ article h3 {
 }
 
 article a {
-/*	color: #b55;*/
 	background: rgba(0, 0, 255, .08);
 }
-
-article a[href^="http"] {
-/*	color: #b55;*/
-	background: none;
-	text-decoration: underline;
-}
-
-article a[href^="http"]:hover {
-	background: rgba(0, 0, 255, .08);
-}
+	article a[href^="http"] {
+		background: none;
+		text-decoration: underline;
+	}
+	article a[href^="http"]:hover {
+		background: rgba(0, 0, 255, .08);
+	}
 
 article img,
 article video {
@@ -239,12 +188,14 @@ article .download {
 }
 
 /* first-children and last-children reset */
-article p:first-child,
-article h3:first-child {
+p:first-child,
+li:first-child,
+h3:first-child {
 	margin-top: 0;
 }
-article p:last-child,
-article h3:last-child {
+p:last-child,
+li:last-child,
+h3:last-child {
 	margin-bottom: 0;
 }
 
@@ -258,9 +209,21 @@ article h3:last-child {
 		(min-device-width: 1024px) and (max-width: 959px),
 		(max-device-width: 480px) and (orientation: landscape),
 		(min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-/*	comment resets */
 	* {}
+	abbr:after {
+		content: " (" attr(title) ")";
+	}
+}
 
 @media print {
-	* {}
+	* {
+		color: #000 !important;
+		line-height: 1.6 !important;
+		background: transparent !important;
+		border: none !important;
+		text-decoration: none !important;
+	}
+	a {font-weight: bold;}
+	header, footer {display: none;}
+	article {text-align: justify;}
 }
