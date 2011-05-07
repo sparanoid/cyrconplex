@@ -3,7 +3,7 @@ layout: post
 title: SlimBox & VoxGrowl
 category: project
 excerpt: The missing Growl styles for Mac OS X
-bgc: '#fefbed'
+bg: '#fefbed'
 ---
 
 <p><img src="{{ site.file }}/slimbox-voxgrowl.png" alt="VoxGrowl - Just Another Growl Styles for Vox"></p>

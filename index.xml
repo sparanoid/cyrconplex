@@ -2,7 +2,7 @@
 permalink: /feed/index.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/css" href="{{ site.assets-path }}/css/feed.min.css"?> 
+<?xml-stylesheet type="text/css" href="{{ site.assets-path }}/css/feed.css"?> 
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 <title>{{ site.name }}</title>
@@ -34,6 +34,4 @@ permalink: /feed/index.xml
 	<summary>{{ post.excerpt | xml_escape }}</summary>
 </entry>
 {% endfor %}
-
-{% include fake-cache.html %}
 </feed>
