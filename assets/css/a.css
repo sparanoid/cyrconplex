@@ -75,19 +75,33 @@ article {
 			margin: 0;
 		}
 		.al {
-			margin: 0;
+			margin: 0 0 -30px 0;
 		}
 			.al li {
+				position: relative;
 				list-style: none;
 				display: inline-block;
+				padding: 0 30px 30px 0;
 			}
-				.al li a {
-					background: none;
-				}
 				.al li img {
-					width: 160px;
-					height: 120px;
+					width: 200px;
+					height: 150px;
 				}
+				.al li a {
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding: 10px;
+					width: 180px;
+					height: 130px;
+					font-size: 12px;
+					background: rgba(255, 255, 255, 0.9);
+					display: none;
+				}
+					.al li:hover a {
+						display: block;
+						text-decoration: none;
+					}
 
 footer {
 	padding: 30px 20px;
