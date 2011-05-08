@@ -1,7 +1,7 @@
 ---
 layout: post
 title: fogbound-highrise ex Coming in June
-category: artwork
+category: work
 excerpt: A collection of drawings about our planet, coming in June, 2012
 thumb: fogbound-highrise-ex.png
 ---

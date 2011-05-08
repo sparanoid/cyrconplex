@@ -1,7 +1,7 @@
 ---
 layout: post
 title: fogbound-highrise ft. Jekyll
-category: project
+category: work
 excerpt: The 15th version of sparanoid.com, featuring Jekyll
 thumb: fogbound-highrise.png
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UPC Dope Show
-category: artwork
+category: work
 excerpt: We're all stars now, in the dope show
 thumb: upc-dope-show.jpg
 ---

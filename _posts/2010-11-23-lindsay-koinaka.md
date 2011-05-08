@@ -1,7 +1,7 @@
 ---
 layout: post
 title: lindsay-koinaka 3.0
-category: project
+category: work
 excerpt: A WordPress theme, now it's on Stacey and Jekyll
 thumb: lindsay-koinaka.jpg
 ---

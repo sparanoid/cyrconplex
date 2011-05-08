@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Old High School
-category: artwork
+category: work
 excerpt: My old high school, before we moved to a new one.
 thumb: old-high-school.jpg
 ---
