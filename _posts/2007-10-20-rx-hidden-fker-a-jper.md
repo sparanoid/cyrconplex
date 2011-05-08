@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RX Hidden FKER a JPER
-category: artwork
+category: work
 excerpt: Finished in my high school
 thumb: rx-hidden-fker-a-jper.jpg
 ---

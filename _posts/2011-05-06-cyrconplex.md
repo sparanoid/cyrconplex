@@ -1,7 +1,7 @@
 ---
 layout: post
 title: cyrconlex
-category: project
+category: work
 excerpt: The 16th version of sparanoid.com
 thumb: cyrconplex.jpg
 bg: '#fff6ed'
