@@ -1,6 +1,7 @@
 # Jekyll specified
 _site
 *.min.css
+*.min.js
 
 # Mac OS X files
 .DS_Store
