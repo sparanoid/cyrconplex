@@ -6,6 +6,6 @@ task :default do
 
 	# Deploy
 	puts 'Deploying...'
-	system("jekyll --no-server --no-auto && rsync -avz --delete --exclude=*.ai --exclude=*.psd --exclude=assets/css/a.css --exclude=assets/css/feed.css --exclude=lab _site/ #{ssh_user}:#{remote_root}")
+	system("jekyll --no-server --no-auto && rsync -avz --delete --exclude=*.ai --exclude=*.psd --exclude=a.css --exclude=feed.css --exclude=jquery.textshuffle.js --exclude=lab _site/ #{ssh_user}:#{remote_root}")
 	puts 'Deployed.'
 end
