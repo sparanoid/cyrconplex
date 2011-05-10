@@ -45,15 +45,14 @@ header ul {
 	}
 	header a {
 		color: #fff;
-/*		opacity: .999;*/
 	}
 		header a[rel=home] {
 			position: relative;
 			width: 24px;
 			height: 24px;
-			display: inline-block;
 			background: #fff;
 			border-radius: 50%;
+			display: inline-block;
 			text-indent: -999em;
 			vertical-align: 6px;
 			margin-right: 8px;
@@ -64,9 +63,9 @@ header ul {
 			left: 11px;
 			height: 2px;
 			width: 2px;
-			content: '';
 			background: #000;
 			border-radius: 50%;
+			content: '';
 		}
 		.current a {
 			text-decoration: underline;
@@ -199,9 +198,8 @@ article li {
 article blockquote {
 }
 
-article abbr, article dfn {
-	border-bottom: 1px dotted;
-	cursor: help;
+article abbr:after {
+	content: " (" attr(title) ")";
 }
 
 article code, article pre {
@@ -243,9 +241,6 @@ h3:last-child {
 		(max-device-width: 480px) and (orientation: landscape),
 		(min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
 	* {}
-	abbr:after {
-		content: " (" attr(title) ")";
-	}
 }
 
 @media print {
