@@ -7,6 +7,6 @@ excerpt: News about this site and the author
 
 <ul class=pl>
 {% for post in site.categories.notebook %}
-	<li><a href={{ post.url }}/>{{ post.title }}</a><p>{{ post.excerpt }}</p></li>
+	<li><a href={{ post.url }}/>{{ post.title }}</a><ins>{{ post.excerpt }}</ins></li>
 {% endfor %}
 </ul>
