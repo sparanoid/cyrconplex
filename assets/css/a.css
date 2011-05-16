@@ -51,6 +51,7 @@ header ul {
 			width: 24px;
 			height: 24px;
 			background: #fff;
+			border-radius: 50px;
 			border-radius: 50%;
 			display: inline-block;
 			text-indent: -999em;
@@ -64,6 +65,8 @@ header ul {
 			height: 2px;
 			width: 2px;
 			background: #000;
+			-webkit-border-radius: 50%;
+			border-radius: 50px;
 			border-radius: 50%;
 			content: '';
 		}
@@ -162,13 +165,9 @@ article h3 {
 }
 
 article a {
-	background: rgba(0, 0, 255, .08);
+	background: rgba(0, 255, 0, .08);
 }
 	article a[href^="http"] {
-		background: none;
-		text-decoration: underline;
-	}
-	article a[href^="http"]:hover {
 		background: rgba(0, 0, 255, .08);
 	}
 
@@ -241,6 +240,7 @@ h3:last-child {
 		(max-device-width: 480px) and (orientation: landscape),
 		(min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
 	* {}
+	:root {-webkit-text-size-adjust: none;}
 }
 
 @media print {
