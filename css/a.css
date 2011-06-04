@@ -23,7 +23,8 @@ a {
 	color: #000;
 }
 	a:hover {
-		border-bottom: 1px dotted rgba(0, 0, 0, .3);
+		background: rgba(255, 255, 0, .9);
+		border-bottom: 1px dotted rgba(0, 0, 0, .5);
 	}
 
 ins {
@@ -42,11 +43,20 @@ header ul {
 }
 	header li {
 		display: inline;
-		margin: 0 2px;
+		margin-right: 6px;
 	}
+		header li:last-child {
+			margin-right: 0;
+		}
 	header a {
-		color: rgba(255, 255, 255, .6);
+		color: #fff;
 	}
+		header a:hover,
+		.current a {
+			color: #ff0;
+			background: none;
+			border-bottom: none;
+		}
 		header a[rel=home] {
 			position: relative;
 			width: 24px;
@@ -57,7 +67,7 @@ header ul {
 			display: inline-block;
 			text-indent: -999em;
 			vertical-align: 6px;
-			margin-right: 8px;
+			margin-right: 3px;
 		}
 		header a[rel=home]:before {
 			position: absolute;
@@ -69,12 +79,6 @@ header ul {
 			border-radius: 50px;
 			border-radius: 50%;
 			content: '';
-		}
-		header a:hover,
-		.current a {
-			color: #fff;
-/*			link decoration overrider */
-			border-bottom: none;
 		}
 
 hgroup {
@@ -106,7 +110,7 @@ article {
 				position: relative;
 				list-style: none;
 				display: inline-block;
-				padding: 0 12px 12px 0;
+				margin: 0 12px 12px 0;
 			}
 				.al li img {
 					width: 180px;
@@ -120,11 +124,10 @@ article {
 					width: 160px;
 					height: 115px;
 					font-size: 12px;
-					background: rgba(255, 255, 255, 0.9);
-					display: none;
+					opacity: 0;
 				}
 					.al li:hover a {
-						display: block;
+						opacity: 1;
 					}
 
 footer {
@@ -145,6 +148,10 @@ footer {
 	}
 	.yoggrtad img {
 		border-radius: 2px;
+	}
+	.yoggrtad a:hover {
+		background: none;
+		border-bottom: none;
 	}
 	.adby {
 		margin-top: 1em;
@@ -167,11 +174,8 @@ article h3 {
 }
 
 article a {
-	background: rgba(0, 255, 0, .08);
+	border-bottom: 1px dotted rgba(0, 0, 0, .5);
 }
-	article a[href^="http"] {
-		background: rgba(0, 0, 255, .08);
-	}
 
 article img,
 article video {
@@ -185,7 +189,8 @@ article p {
 }
 
 article ul {
-	margin-left: 18px;
+	margin-left: 16px;
+	list-style: square;
 }
 
 article ol {
@@ -232,8 +237,7 @@ h3:last-child {
 }
 
 ::selection {
-	color: #fff;
-	background: rgba(255, 0, 0, .8);
+	background: rgba(255, 255, 0, .8);
 }
 
 @media print,
