@@ -9,6 +9,7 @@
 * {
 	margin: 0;
 	padding: 0;
+/*	I don't need any decoration here. */
 	text-decoration: none;
 }
 
@@ -22,7 +23,7 @@ a {
 	color: #000;
 }
 	a:hover {
-		text-decoration: underline;
+		border-bottom: 1px dotted rgba(0, 0, 0, .3);
 	}
 
 ins {
@@ -44,7 +45,7 @@ header ul {
 		margin: 0 2px;
 	}
 	header a {
-		color: #fff;
+		color: rgba(255, 255, 255, .6);
 	}
 		header a[rel=home] {
 			position: relative;
@@ -69,8 +70,11 @@ header ul {
 			border-radius: 50%;
 			content: '';
 		}
+		header a:hover,
 		.current a {
-			text-decoration: underline;
+			color: #fff;
+/*			link decoration overrider */
+			border-bottom: none;
 		}
 
 hgroup {
@@ -121,7 +125,6 @@ article {
 				}
 					.al li:hover a {
 						display: block;
-						text-decoration: none;
 					}
 
 footer {
