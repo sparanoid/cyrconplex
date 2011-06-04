@@ -5,6 +5,7 @@ category: work
 excerpt: I dont't like Firefox, what about you?
 ---
 
+<div class=txt>
 <p>I dont't like Firefox, what about you?</p>
 
 <ul>
@@ -17,3 +18,4 @@ excerpt: I dont't like Firefox, what about you?
 <a href="http://creativecommons.org/licenses/by/2.0/legalcode/">http://creativecommons.org/licenses/by/2.0/legalcode/</a></p>
 
 <p class=download><a href="{{ site.file }}/download/antiff.7z">Download</a> / antiff.7z</p>
+</div>
