@@ -15,8 +15,8 @@ file: http://a1.sparanoid.com
 # used by specified background images
 assets-cdn: http://a2.sparanoid.com
 
-# used by css url in default.html
-assets-path: /assets
+# used by css url in default.html and index.xml
+css-path: /css
 
 # custom vars
 name: Sparanoid
