@@ -27,8 +27,8 @@
 
 {{ content }}
 
-<footer>
 {% if page.category == "work" or page.category == "notebook" %} 
+<nav>
 {% if page.next.url %}
 	<p><span>Next</span> <a href={{ page.next.url }}/>{{ page.next.title }}</a></p>
 {% else %}
@@ -39,10 +39,11 @@
 {% else %}
 	<p><span>Prev</span> N/A</p>
 {% endif %}
-	<br>
+</nav>
 {% endif %}
 
-	<p><span>Search</span> <a href="http://www.google.com/search?hl=en&amp;q=site%3A{{ site.url }}">site:{{ site.url }}</a></p>
+<footer>
+	<p>Search <a href="http://www.google.com/search?hl=en&amp;q=site%3A{{ site.url }}">site:{{ site.url }}</a></p>
 
 	<br>
 
@@ -50,7 +51,7 @@
 
 	<br>
 
-	<p class=c><a href=http://twitter.com/{{ site.twitter }}>{{ site.name }}</a> feat. <a href=http://twitter.com/{{ site.twitter-alt }}>{{ site.full-name }}</a>. (<a href=/feed/ title="Feed - Atom (The Atom Syndication Format)">Atom</a>)</p>
+	<p class=c><a href=http://twitter.com/{{ site.twitter }}>{{ site.name }}</a> feat. <a href=http://sparanoid.com/work/cyrconplex/>cyrconplex</a>. (<a href=/feed/ title="Feed - Atom (The Atom Syndication Format)">Atom</a>)</p>
 </footer>
 
 <!-- Cache Hit {{ site.time | date_to_xmlschema }} -->

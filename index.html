@@ -6,7 +6,7 @@ title: Sparanoid
 {% for post in site.posts limit:1 %}
 {% if post.category == "work" %} 
 <hgroup>
-	<h1><a href="{{ post.url }}/" rel=bookmark>{{ post.title }}</a></h1>
+	<h1><span>Latest</span> <a href="{{ post.url }}/" rel=bookmark>{{ post.title }}</a></h1>
 	<h2><time pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time></h2>
 </hgroup>
 
