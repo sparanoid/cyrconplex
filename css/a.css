@@ -35,58 +35,37 @@ del {
 	text-decoration: line-through;
 }
 
-header ul {
-	font-size: 12px;
-	padding: 6px 20px;
-	background: rgba(0, 0, 0, .9);
-	display: inline-block;
+header {
+	margin-top: 30px;
 }
-	header li {
-		display: inline;
-		margin-right: 6px;
+	header ul {
+		font-size: 12px;
 	}
-		header li:last-child {
-			margin-right: 0;
+		header li {
+			display: inline;
+			margin-right: 6px;
 		}
-	header a {
-		color: #fff;
-	}
-		header a:hover,
 		.current a {
-			color: #ff0;
-			background: none;
-			border-bottom: none;
+			border-bottom: 1px dotted rgba(0, 0, 0, .5);
 		}
 		header a[rel=home] {
-			position: relative;
-			width: 24px;
-			height: 24px;
-			background: #fff;
-			border-radius: 50px;
-			border-radius: 50%;
+			width: 128px;
+			height: 26px;
+			background: url(../img/l.png);
 			display: inline-block;
 			text-indent: -999em;
 			vertical-align: 6px;
-			margin-right: 3px;
+			border: none;
 		}
-		header a[rel=home]:before {
-			position: absolute;
-			top: 11px;
-			left: 11px;
-			height: 2px;
-			width: 2px;
-			background: #000;
-			border-radius: 50px;
-			border-radius: 50%;
-			content: '';
-		}
+			header a[rel=home]:hover {
+				border: none;
+			}
 
-hgroup, article, nav, footer {
+header, hgroup, article, nav, footer {
 	padding: 0 20px 30px 20px;
 }
 
 hgroup {
-	padding-top: 30px;
 }
 	hgroup h1 {
 		font-size: 16px;
