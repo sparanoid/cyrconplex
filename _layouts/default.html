@@ -12,10 +12,11 @@
 <link rel=alternate href=/feed/ type=application/atom+xml>
 <link rel=stylesheet href={{ site.css-path }}/a.min.css>
 
-{% if page.title == 'Sparanoid' %}<style>:root {background: url(/img/s.png) no-repeat 0 0;}</style>{% endif %}
-{% if page.title == 'Work' or page.category == 'work' %}<style>:root {background: url(/img/w.png) no-repeat 0 0;}</style>{% endif %}
-{% if page.title == 'Notebook' or page.category == 'notebook' %}<style>:root {background: url(/img/n.png) no-repeat 0 0;}</style>{% endif %}
-{% if page.title == 'About' or page.category == 'about' %}<style>:root {background: url(/img/a.png) no-repeat 0 0;}</style>{% endif %}
+{% if page.title == 'Sparanoid' %}<style>:root {background: url(/img/s.svg) no-repeat 0 0;}</style>{% endif %}
+{% if page.title == 'Work' or page.category == 'work' %}<style>:root {background: url(/img/w.svg) no-repeat 0 0;}</style>{% endif %}
+{% if page.title == 'Note' or page.category == 'note' %}<style>:root {background: url(/img/n.svg) no-repeat 0 0;}</style>{% endif %}
+{% if page.title == 'About' or page.category == 'about' %}<style>:root {background: url(/img/a.svg) no-repeat 0 0;}</style>{% endif %}
+{% if page.title == 'Error' %}<style>:root {background: #ff0;}</style>{% endif %}
 
 <title>{% if page.title != 'Sparanoid' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
 
@@ -23,14 +24,14 @@
 	<ul>
 		<li{% if page.title == 'Sparanoid' %} class=current{% endif %}><a href=/ rel=home accesskey=x>Home</a></li>
 		<li{% if page.title == 'Work' or page.category == 'work' %} class=current{% endif %}><a href=/work/>Work</a></li>
-		<li{% if page.title == 'Notebook' or page.category == 'notebook' %} class=current{% endif %}><a href=/notebook/>Notebook</a></li>
+		<li{% if page.title == 'Note' or page.category == 'note' %} class=current{% endif %}><a href=/note/>Note</a></li>
 		<li{% if page.title == 'About' or page.category == 'about' %} class=current{% endif %}><a href=/about/>About</a></li>
 	</ul>
 </header>
 
 {{ content }}
 
-{% if page.category == "work" or page.category == "notebook" %} 
+{% if page.category == "work" or page.category == "note" %} 
 <nav>
 {% if page.next.url %}
 	<p><span>Next</span> <a href={{ page.next.url }}/>{{ page.next.title }}</a></p>
@@ -46,13 +47,13 @@
 {% endif %}
 
 <footer>
+	{% if page.title != 'Sparanoid' %}
 	<p>Search <a href="http://www.google.com/search?hl=en&amp;q=site%3A{{ site.url }}">site:{{ site.url }}</a></p>
 
 	<br>
-
 	{% include sponsor.html %}
-
 	<br>
+	{% endif %}
 
 	<p class=c><a href=http://twitter.com/{{ site.twitter }}>{{ site.name }}</a> feat. <a href=http://sparanoid.com/work/cyrconplex/>cyrconplex</a>. (<a href=/feed/ title="Feed - Atom (The Atom Syndication Format)">Atom</a>)</p>
 </footer>

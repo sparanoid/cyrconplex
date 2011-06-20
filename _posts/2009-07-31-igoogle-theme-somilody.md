@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My First iGoogle Theme - Somilody 2
-category: notebook
+category: note
 excerpt: An iGoogle theme
 ---
 

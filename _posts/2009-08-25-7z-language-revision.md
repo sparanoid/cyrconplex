@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 7-Zip Chinese Simplified Language File Revision #1
-category: notebook
+category: note
 excerpt: 7-Zip 簡體中文語言文件修訂
 ---
 
