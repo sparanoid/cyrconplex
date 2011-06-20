@@ -40,6 +40,7 @@ header {
 }
 	header ul {
 		font-size: 12px;
+		font-weight: bold;
 	}
 		header li {
 			display: inline;
@@ -51,10 +52,10 @@ header {
 		header a[rel=home] {
 			width: 128px;
 			height: 26px;
-			background: url(../img/l.png);
+			background: url(../img/l.svg);
 			display: inline-block;
 			text-indent: -999em;
-			vertical-align: 6px;
+			vertical-align: 7px;
 			border: none;
 		}
 			header a[rel=home]:hover {
@@ -208,12 +209,13 @@ article {
 					opacity: 1;
 				}
 
-/* first-children and last-children reset */
+/* first-children and last-children resets */
 p:first-child,
 li:first-child,
 h3:first-child {
 	margin-top: 0;
 }
+
 p:last-child,
 li:last-child,
 h3:last-child {
@@ -242,6 +244,6 @@ h3:last-child {
 		text-decoration: none !important;
 	}
 	a {font-weight: bold;}
-	header, footer {display: none;}
+	header, nav, footer {display: none;}
 	article {text-align: justify;}
 }

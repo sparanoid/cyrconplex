@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Logging Chinese World of Warcraft with US Client
-category: notebook
+category: note
 excerpt: Use US World of Warcraft client to login Chinese servers
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-category: notebook
+category: note
 excerpt: It's me
 ---
 
