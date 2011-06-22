@@ -21,8 +21,8 @@ bg: '#eafbf1'
 <p class=download><a href="{{ site.file }}/download/judgment_icon.7z">Download</a> / judgment_icon.7z</p>
 <p class=download><a href="{{ site.file }}/download/judgment_library.7z">Download</a> / judgment_library.7z</p>
 <p class=download><a href="{{ site.file }}/download/judgment_screensaver.7z">Download</a> / judgment_screensaver.7z</p>
-<p class=download><a href="{{ site.file }}/download/judgment_screensaver_chs.7z">Download</a> / judgment_screensaver_chs.7z</p>
-<p class=download><a href="{{ site.file }}/download/judgment_screensaver_en.7z">Download</a> / judgment_screensaver_en.7z</p>
+<p class=download><a href="{{ site.file }}/download/judgment_screensaver_chs.exe">Download</a> / judgment_screensaver_chs.exe</p>
+<p class=download><a href="{{ site.file }}/download/judgment_screensaver_en.exe">Download</a> / judgment_screensaver_en.exe</p>
 <p class=download><a href="{{ site.file }}/download/antiskill_screensaver.7z">Download</a> / antiskill_screensaver.7z</p>
-<p class=download><a href="{{ site.file }}/download/antiskill_screensaver_chs.7z">Download</a> / antiskill_screensaver_chs.7z</p>
-<p class=download><a href="{{ site.file }}/download/antiskill_screensaver_en.7z">Download</a> / antiskill_screensaver_en.7z</p>
+<p class=download><a href="{{ site.file }}/download/antiskill_screensaver_chs.exe">Download</a> / antiskill_screensaver_chs.exe</p>
+<p class=download><a href="{{ site.file }}/download/antiskill_screensaver_en.exe">Download</a> / antiskill_screensaver_en.exe</p>
