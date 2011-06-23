@@ -50,7 +50,7 @@ header {
 			border-bottom: 1px dotted rgba(0, 0, 0, .5);
 		}
 		header a[rel=home] {
-			width: 128px;
+			width: 26px;
 			height: 26px;
 			background: url(../img/l.svg);
 			display: inline-block;
