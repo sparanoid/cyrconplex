@@ -44,7 +44,7 @@ header {
 	}
 		header li {
 			display: inline;
-			margin-right: 6px;
+			margin-right: 7px;
 		}
 		.current a {
 			border-bottom: 1px dotted rgba(0, 0, 0, .5);
@@ -140,20 +140,20 @@ article {
 		line-height: 1.7;
 	}
 
-	article ul {
-		margin-left: 25px;
+	article ul,
+	article ol {
+		margin-left: 18px;
 		list-style: square;
 	}
-
-	article ol {
-		margin-left: 37px;
-	}
-
-	article li {
-		line-height: 1.7;
-	}
+		article li {
+			line-height: 1.7;
+		}
 
 	article blockquote {
+	}
+
+	article sup {
+		line-height: 1;;
 	}
 
 	article abbr:after {
@@ -175,6 +175,7 @@ article {
 	article .download {
 		background: rgba(0, 255, 0, .08);
 	}
+
 /*	post list in pages */
 	.pl li {
 		margin-bottom: 1em;
