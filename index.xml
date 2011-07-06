@@ -8,8 +8,8 @@ permalink: /feed/index.xml
 <title>{{ site.name }}</title>
 <subtitle>{{ site.slogan }}</subtitle>
 
-<link href="http://{{ site.url }}/feed/" rel="self"/>
-<link href="http://{{ site.url }}/"/>
+<link href="http://{{ site.url }}/feed/" rel="self" />
+<link href="http://{{ site.url }}/" />
 
 <id>http://{{ site.url }}/feed/</id>
 
@@ -24,7 +24,7 @@ permalink: /feed/index.xml
 {% for post in site.posts limit:10 %}
 <entry>
 	<title>{{ post.title | xml_escape }}</title>
-	<link href="http://{{ site.url }}{{ post.url }}/"/>
+	<link href="http://{{ site.url }}{{ post.url }}/" />
 	<id>tag:{{ site.url }},{{ post.date | date: "%Y" }}:{{ post.id }}/</id>
 	<updated>{{ post.date | date_to_xmlschema }}</updated>
 	<author>
