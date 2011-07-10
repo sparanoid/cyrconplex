@@ -11,6 +11,7 @@
 
 <link rel=alternate href=/feed/ type=application/atom+xml>
 <link rel=stylesheet href={{ site.css-path }}/a.min.css>
+<link rel=dns-prefetch href={{ site.file }}>
 
 {% if page.title == 'Sparanoid' %}<style>:root {background: url(/img/s.svg) no-repeat 0 0;}</style>{% endif %}
 {% if page.title == 'Work' or page.category == 'work' %}<style>:root {background: url(/img/w.svg) no-repeat 0 0;}</style>{% endif %}
@@ -22,7 +23,7 @@
 
 <header>
 	<ul>
-		<li{% if page.title == 'Sparanoid' %} class=current{% endif %}><a href=/ rel=home accesskey=x>Home</a></li>
+		<li><a href=/ rel=home accesskey=x>Home</a></li>
 		<li{% if page.title == 'Work' or page.category == 'work' %} class=current{% endif %}><a href=/work/>Work</a></li>
 		<li{% if page.title == 'Note' or page.category == 'note' %} class=current{% endif %}><a href=/note/>Note</a></li>
 		<li{% if page.title == 'About' or page.category == 'about' %} class=current{% endif %}><a href=/about/>About</a></li>
