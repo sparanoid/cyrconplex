@@ -23,7 +23,7 @@
 	line-height: 1.7;
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 50px 70px;
+	padding: 50px 90px;
     -webkit-perspective: 200;
     -moz-perspective: 200;
     perspective: 200;
@@ -35,10 +35,11 @@
 a {
 	color: #000;
 /*	color: #fff;*/
+	background: rgba(255, 255, 0, 0);
 }
 	a:hover {
-		background: rgba(255, 255, 0, .9);
 		border-bottom: 1px dotted rgba(0, 0, 0, .5);
+		background: rgba(255, 255, 0, .9);
 	}
 
 header, article, footer, h2 {
@@ -55,16 +56,26 @@ h1, article, footer {
 }
 
 h1 {
+	position: relative;
 	font-weight: 100;
 	font-size: 45px;
 	line-height: 1;
-	margin-left: -44px;
-	padding-left: 40px;
-	background: url(../img/l.svg) no-repeat 0 10px;
+	margin-left: -4px;
 	-webkit-animation-delay: 0.55s;
 	-moz-animation-delay: 0.55s;
 	animation-delay: 0.55s;
 }
+	h1:before {
+		position: absolute;
+		top: 3px;
+		left: -60px;
+		display: block;
+		content: ' ';
+		width: 30px;
+		height: 30px;
+		border-radius: 80px;
+		border: 6px #000 solid;
+	}
 
 h2, footer, article p {
 	font-family: Arial, sans-serif;
@@ -74,9 +85,9 @@ h2, footer, article p {
 }
 
 h2 {
-	-webkit-animation: txt 5s 1 ease;
-	-moz-animation: txt 5s 1 ease;
-	animation: txt 5s 1 ease;
+	-webkit-animation: txt 3s 1 ease;
+	-moz-animation: txt 3s 1 ease;
+	animation: txt 3s 1 ease;
 }
 
 article {
@@ -152,19 +163,19 @@ footer {
 
 @-webkit-keyframes txt {
 	0% {opacity: 0;}
-	50% {opacity: 0;}
+	95% {opacity: 0;}
 	100% {opacity: 100;}
 }
 
 @-moz-keyframes txt {
 	0% {opacity: 0;}
-	50% {opacity: 0;}
+	95% {opacity: 0;}
 	100% {opacity: 100;}
 }
 
 @keyframes txt {
 	0% {opacity: 0;}
-	50% {opacity: 0;}
+	95% {opacity: 0;}
 	100% {opacity: 100;}
 }
 
@@ -197,16 +208,4 @@ footer {
 		(min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
 	* {}
 	:root {-webkit-text-size-adjust: none;}
-}
-
-@media print {
-	* {
-		color: #000 !important;
-		line-height: 1.6 !important;
-		background: transparent !important;
-		border: none !important;
-		text-decoration: none !important;
-	}
-	a {font-weight: bold;}
-	article {text-align: justify;}
 }

@@ -36,7 +36,7 @@ del {
 }
 
 header {
-	margin-top: 30px;
+	margin-top: 35px;
 }
 	header ul {
 		font-size: 12px;
@@ -52,11 +52,11 @@ header {
 		header a[rel=home] {
 			width: 14px;
 			height: 14px;
-			border-radius: 22px;
+			border-radius: 14px;
+			border: 3px #000 solid;
 			display: inline-block;
 			text-indent: -999em;
 			vertical-align: 1px;
-			border: 3px #000 solid;
 		}
 
 header, hgroup, article, nav, footer {
