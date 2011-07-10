@@ -16,3 +16,4 @@ Rakefile
 !errors.log
 *.bak
 *.tmproj
+*.esproj
