@@ -50,17 +50,14 @@ header {
 			border-bottom: 1px dotted rgba(0, 0, 0, .5);
 		}
 		header a[rel=home] {
-			width: 26px;
-			height: 26px;
-			background: url(../img/l.svg);
+			width: 14px;
+			height: 14px;
+			border-radius: 22px;
 			display: inline-block;
 			text-indent: -999em;
-			vertical-align: 7px;
-			border: none;
+			vertical-align: 1px;
+			border: 3px #000 solid;
 		}
-			header a[rel=home]:hover {
-				border: none;
-			}
 
 header, hgroup, article, nav, footer {
 	padding: 0 20px 30px 20px;
