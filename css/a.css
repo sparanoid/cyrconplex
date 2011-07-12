@@ -89,27 +89,33 @@ footer {
 	footer br {
 		line-height: 30px;
 	}
-	.yoggrttext {
-		width: 160px;
-		display: block;
+	.bsap {
+		max-width: 600px;
 	}
-	.yoggrtad img {
-		border-radius: 2px;
-	}
-	.yoggrtad a:hover {
+	.bsa_it_ad a:first-child {
+		border: none;
 		background: none;
-		border-bottom: none;
 	}
-	.adby {
-		margin-top: 1em;
-		font-size: 9px;
-		font-family: Arial, sans-serif;
-		text-transform: uppercase;
+/*	image */
+	.bsa_it_i {
+		display: inline-block;
+		padding-right: 10px;
+		float: left;
 	}
-		.adby em {
-			font-family: Georgia, serif;
-			text-transform: lowercase;
-		}
+/*	ads text title */
+	.bsa_it_t {
+		display: block;
+		padding-bottom: .5em;
+		font-weight: bold;
+	}
+/*	ads text content */
+	.bsa_it_d {
+		line-height: 1.6;
+	}
+/*	hide ads by */
+	.one .bsa_it_p {
+		display:none;
+	}
 	.c {
 		font-size: 12px;
 	}
